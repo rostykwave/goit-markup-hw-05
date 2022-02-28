@@ -86,7 +86,7 @@ img {
 }
 
 /* Header */
-.header {
+.page-header {
   border-bottom: 1px solid #ececec;
   background-color: var(--primary-bg);
 }
