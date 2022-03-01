@@ -138,9 +138,10 @@ img {
   position: relative;
   color: var(--accent-txt);
 }
-.current-nav::before {
+.current-nav::after {
   position: absolute;
   bottom: -1px;
+  left: 0;
 
   content: '';
   min-width: 100%;
@@ -297,6 +298,31 @@ img {
 
 .services-item + .services-item {
   margin-left: 30px;
+}
+
+.services-item {
+  position: relative;
+}
+
+.services-content {
+  position: absolute;
+  bottom: 0;
+
+  min-height: 70px;
+  width: 100%;
+  padding: 27px 0;
+
+  text-align: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.services-content-text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 /* Наша команда */
