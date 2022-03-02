@@ -56,10 +56,21 @@
             <section class="hero overlay">
                 <div class="container">
                     <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                    <button type="button" class="hero-btn btn">Заказать услугу</button>
+                    <button type="button" class="hero-btn btn" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
-        
+
+<!-- Modal window -->
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="close-btn btn" data-modal-close>
+                        <svg class="close-black-icon">
+                            <use href="./images/icons.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        is-hidden
 <!-- Особенности -->
             <section class="features section">
                 <div class="container">
@@ -122,11 +133,12 @@
                             <p class="services-text">Десктопные приложения</p>
                         </li>
                         <li class="services-item">
-                            <img src="./images/services/box-2.jpg" alt="Разработка мобильной версии программы" width="370" height="294"
-                                class="services-thumb">
+                            <img src="./images/services/box-2.jpg" alt="Разработка мобильной версии программы" width="370" height="294" class="services-thumb">
+                            <p class="services-text">Мобильные приложения</p>
                         </li>
                         <li class="services-item">
                             <img src="./images/services/box-3.jpg" alt="Дизайн сайта" width="370" height="294" class="services-thumb">
+                            <p class="services-text">Дизайнерские решения</p>
                         </li>
                     </ul>
                 </div>
@@ -406,5 +418,7 @@
                   
             </div>
         </footer>
+
+<script src="./modal.js"></script>       
 </body>
 </html>
