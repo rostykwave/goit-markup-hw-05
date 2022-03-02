@@ -504,6 +504,46 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.portfolio-thumb {
+  position: relative;
+}
+.portfolio-thumb::before {
+  position: absolute;
+
+  content: '';
+  min-width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
+}
+
+.portfolio-overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: #ffffff;
+
+  opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-thumb::before,
+.portfolio-item:focus .portfolio-thumb::before {
+  opacity: 1;
+}
+
+.portfolio-item:hover .portfolio-overlay-text,
+.portfolio-item:focus .portfolio-overlay-text {
+  opacity: 1;
+}
+
 .portfolio-content {
   padding: 20px 24px;
 
